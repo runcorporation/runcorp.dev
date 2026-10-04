@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>runcorp - The development lifecycle for the age of AI agents</title>
+    <meta name="description" content="runcorp builds Runccc, Runcfg and Rundoc: products that cover the whole development lifecycle, from the first agent edit to release and the organisation that runs it, with people in charge of every change.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,800;1,900&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        ccc: { 100: '#e0eceb', 600: '#36726f', 800: '#254346' },
+                        cfg: { 100: '#e0e2ec', 600: '#52577a', 800: '#292b3d' },
+                        doc: { 100: '#ece3e8', 600: '#72435e', 800: '#432c3d' },
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* corp.png carries wide transparent padding; crop it to the 902x180 wordmark */
+        .corp-logo { position: relative; overflow: hidden; aspect-ratio: 902 / 180; }
+        .corp-logo img { position: absolute; max-width: none; width: 133.04%; left: -16.52%; top: -83.33%; }
+    </style>
+</head>
+<body class="h-full bg-neutral-50">
+<div class="min-h-screen">
+    <header class="relative bg-neutral-950 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(255,255,255,0.08),_transparent_60%)]" aria-hidden="true"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-24 sm:pt-36 sm:pb-32 text-center">
+            <h1 class="corp-logo mx-auto w-full max-w-[720px]">
+                <img src="corp.png" alt="runcorp">
+            </h1>
+            <p class="mt-12 max-w-4xl mx-auto [text-wrap:balance] font-display font-extrabold italic uppercase tracking-tight text-2xl sm:text-3xl lg:text-4xl text-white">
+                The development lifecycle, built for the age of agents
+            </p>
+            <p class="mt-6 text-lg sm:text-xl text-neutral-400 max-w-3xl mx-auto">
+                AI agents now write and change code faster than any team can follow. The run products cover the whole lifecycle of that code, from the first agent edit to the flag that releases it and the organisation that runs it, so people stay in charge of every change.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#products" class="bg-white text-neutral-950 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-neutral-200 transition-colors shadow-lg">
+                    Explore products
+                </a>
+                <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors">
+                    Talk to us
+                </a>
+            </div>
+        </div>
+        <div class="relative">
+            <svg class="w-full h-16 text-neutral-50" preserveAspectRatio="none" viewBox="0 0 1440 54" fill="currentColor">
+                <path d="M0 22L60 16.7C120 11 240 1 360 0.3C480 0 600 9 720 16.3C840 24 960 30 1080 30.7C1200 31 1320 27 1380 24.3L1440 22V54H1380C1320 54 1200 54 1080 54C960 54 840 54 720 54C600 54 480 54 360 54C240 54 120 54 60 54H0V22Z"/>
+            </svg>
+        </div>
+    </header>
+
+    <section id="products" class="py-20 bg-neutral-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-neutral-500 font-semibold text-sm uppercase tracking-wide">Products</span>
+                <h2 class="mt-2 font-display font-extrabold text-3xl sm:text-4xl text-neutral-950">One Lifecycle, Three Products</h2>
+                <p class="mt-4 text-xl text-neutral-600 max-w-2xl mx-auto">
+                    Each product covers one stage of the lifecycle and works on its own, for the people on your team and the agents working beside them.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <article class="bg-white rounded-xl shadow-sm border border-neutral-200 overflow-hidden flex flex-col">
+                    <div class="bg-ccc-800 px-8 py-8 flex items-center">
+                        <img src="brand/ccc.png" alt="Runccc" class="h-9 w-auto">
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <span class="self-start inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-ccc-100 text-ccc-600 mb-4">For software teams &amp; their agents</span>
+                        <h3 class="text-xl font-semibold text-neutral-950 mb-2">Code Change Capture</h3>
+                        <p class="text-neutral-600 mb-6">Gives coding agents an always-fresh map of your code and puts every edit they make through a previewed, revertible path. You see everything a change touches before it's committed: functions, tests, services and cross-service contracts.</p>
+                        <ul class="space-y-2 text-neutral-700 text-sm mb-8">
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Tests and services at risk, per change</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Local MCP server for coding agents</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Architecture visualiser, system to function</li>
+                        </ul>
+                        <div class="mt-auto flex flex-wrap gap-3">
+                            <a href="https://runccc.dev" class="inline-flex items-center rounded-lg bg-ccc-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-ccc-800 transition-colors">Visit Runccc</a>
+                            <a href="https://github.com/colwill/ccc" class="inline-flex items-center rounded-lg border border-neutral-300 px-5 py-2.5 text-sm font-semibold text-neutral-700 hover:bg-neutral-50 transition-colors">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-xl shadow-sm border border-neutral-200 overflow-hidden flex flex-col">
+                    <div class="bg-cfg-800 px-8 py-8 flex items-center">
+                        <img src="brand/cfg.png" alt="Runcfg" class="h-9 w-auto">
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <span class="self-start inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-cfg-100 text-cfg-600 mb-4">For product &amp; platform teams</span>
+                        <h3 class="text-xl font-semibold text-neutral-950 mb-2">Runtime Configuration</h3>
+                        <p class="text-neutral-600 mb-6">Release code behind feature flags and remote configuration served from global edge locations. However fast it was written, every change can be turned on, tuned or rolled back in production instantly, without a redeploy.</p>
+                        <ul class="space-y-2 text-neutral-700 text-sm mb-8">
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Edge-replicated flags and config</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>SDKs for Go, Rust, C++ and TypeScript</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>WASM config workers at the edge</li>
+                        </ul>
+                        <div class="mt-auto flex flex-wrap gap-3">
+                            <a href="https://runcfg.dev" class="inline-flex items-center rounded-lg bg-cfg-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-cfg-800 transition-colors">Visit Runcfg</a>
+                            <a href="https://runcfg.com/register" class="inline-flex items-center rounded-lg border border-neutral-300 px-5 py-2.5 text-sm font-semibold text-neutral-700 hover:bg-neutral-50 transition-colors">Start free</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-xl shadow-sm border border-neutral-200 overflow-hidden flex flex-col">
+                    <div class="bg-doc-800 px-8 py-8 flex items-center">
+                        <img src="brand/doc.png" alt="Rundoc" class="h-9 w-auto">
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <span class="self-start inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-doc-100 text-doc-600 mb-4">For the enterprise</span>
+                        <h3 class="text-xl font-semibold text-neutral-950 mb-2">Development Organisation &amp; Coordination</h3>
+                        <p class="text-neutral-600 mb-6">The organisation around the code in one platform: catalogue, access control, processes, software templates and self-service infrastructure, plus a knowledge base that people and agents can both search.</p>
+                        <ul class="space-y-2 text-neutral-700 text-sm mb-8">
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Service catalogue and access map</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Knowledge base searchable over MCP</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Plugins that hot-reload without downtime</li>
+                        </ul>
+                        <div class="mt-auto flex flex-wrap gap-3">
+                            <a href="https://doc.runcorp.dev" class="inline-flex items-center rounded-lg bg-doc-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-doc-800 transition-colors">Visit Rundoc</a>
+                            <a href="https://github.com/colwill/doc" class="inline-flex items-center rounded-lg border border-neutral-300 px-5 py-2.5 text-sm font-semibold text-neutral-700 hover:bg-neutral-50 transition-colors">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-neutral-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white/10 text-neutral-300 mb-4">The lifecycle</span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white">From Agent Edit to Organisation</h2>
+                <p class="mt-4 text-xl text-neutral-400 max-w-2xl mx-auto">
+                    When agents write the code, the work that matters is understanding it, releasing it safely and keeping everyone connected to it. Each run product owns one of those stages.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white/5 border border-white/10 rounded-lg p-8">
+                    <div class="text-sm font-semibold uppercase tracking-wide text-neutral-500 mb-2">1 &middot; Write &amp; review</div>
+                    <h3 class="font-display font-extrabold italic uppercase text-2xl text-white mb-3">Understand it</h3>
+                    <p class="text-neutral-300"><strong class="text-white">Runccc</strong> gives agents an exact map to work from and confines their edits, then shows you what each change reaches, the tests it puts at risk and the services it touches, before it's committed.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-lg p-8">
+                    <div class="text-sm font-semibold uppercase tracking-wide text-neutral-500 mb-2">2 &middot; Release</div>
+                    <h3 class="font-display font-extrabold italic uppercase text-2xl text-white mb-3">Ship it safely</h3>
+                    <p class="text-neutral-300"><strong class="text-white">Runcfg</strong> puts each change behind a flag or config value, so new code can be turned on, tuned or rolled back from the edge in seconds, without waiting on a deploy.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-lg p-8">
+                    <div class="text-sm font-semibold uppercase tracking-wide text-neutral-500 mb-2">3 &middot; Operate &amp; coordinate</div>
+                    <h3 class="font-display font-extrabold italic uppercase text-2xl text-white mb-3">Own it</h3>
+                    <p class="text-neutral-300"><strong class="text-white">Rundoc</strong> connects every service to its team, docs, permissions and processes, and gives agents the same organisational knowledge your people use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="open-source" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-8 text-center sm:text-left">
+                <div class="flex items-center justify-center shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 110" width="72" height="79" aria-label="Free and Open Source Software" role="img">
+                        <path fill="#3DA639" d="M50 0C22.4 0 0 22.4 0 50c0 21.5 13.6 39.9 32.7 47L42 73.7C34.5 70.5 29.2 63 29.2 54.3 29.2 42.8 38.5 33.5 50 33.5s20.8 9.3 20.8 20.8c0 8.7-5.3 16.2-12.8 19.4L67.3 97C86.4 89.9 100 71.5 100 50 100 22.4 77.6 0 50 0z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-neutral-950">Built in the open</h2>
+                    <p class="mt-3 text-lg text-neutral-600">
+                        The cores of RunCCC and RunDOC are open source, so you can see exactly what your agents are working with. Run them yourself, and move to the hosted and enterprise editions when you need support.
+                    </p>
+                    <div class="mt-5 flex flex-col sm:flex-row gap-3 justify-center sm:justify-start">
+                        <a href="https://ccc.runcorp.dev" class="inline-flex items-center justify-center rounded-lg bg-neutral-950 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-neutral-700 transition-colors">CCC</a>
+                        <a href="https://doc.runcorp.dev" class="inline-flex items-center justify-center rounded-lg bg-neutral-950 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-neutral-700 transition-colors">DOC</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-neutral-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-neutral-950">Bringing agents into your lifecycle?</h2>
+            <p class="mt-4 text-xl text-neutral-600">
+                Tell us how your teams build with AI today and we'll point you at the right place to start, or set up an enterprise trial.
+            </p>
+            <div class="mt-10">
+                <a href="https://cfg.runcorp.dev/contact" class="inline-block bg-neutral-950 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-neutral-700 transition-colors shadow-lg">
+                    Contact us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-950 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
+                <a href="https://runcorp.dev" class="corp-logo w-[180px]" aria-label="RunCorp">
+                    <img src="brand/corp.png" alt="RunCorp">
+                </a>
+                <div class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-neutral-400">
+                    <a href="https://github.com/colwill" class="hover:text-white transition-colors">Open source</a>
+                    <a href="https://runcorp.dev/#contact" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="mt-10 flex flex-wrap justify-center items-center gap-x-10 gap-y-6">
+                <a href="https://ccc.runcorp.dev" class="opacity-70 hover:opacity-100 transition-opacity"><img src="brand/ccc.png" alt="RunCCC" class="h-6 w-auto"></a>
+                <a href="https://cfg.runcorp.dev" class="opacity-70 hover:opacity-100 transition-opacity"><img src="brand/cfg.png" alt="RunCFG" class="h-6 w-auto"></a>
+                <a href="https://doc.runcorp.dev" class="opacity-70 hover:opacity-100 transition-opacity"><img src="brand/doc.png" alt="RunDOC" class="h-6 w-auto"></a>
+            </div>
+            <div class="mt-10 pt-8 border-t border-neutral-800 text-center text-neutral-500 text-sm">
+                &copy; 2026 RunCorp.dev. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
